@@ -5,11 +5,19 @@
 @tailwind utilities;
 @layer components {
   body {
-    background: url("./assets/sunset.jpg") no-repeat center/cover;
+    background: url("./assets/sunset.jpg") no-repeat center center/cover;
   }
   .location_name,
   weather {
     font-size: 2.25rem;
     line-height: 2.5rem;
+  }
+  .details_header {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+  .details_result {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 }

@@ -11,6 +11,7 @@ function App() {
     <div className="App w-full h-screen m-0 p-0 box-border">
       <Header cities={cities} setCities={setCities} />
       <Weather />
+      <WeatherDetails />
     </div>
   );
 }

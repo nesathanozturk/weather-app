@@ -1,6 +1,6 @@
 function Weather() {
   return (
-    <div className="container w-[40rem] h-[20rem] flex flex-col justify-center items-center m-auto text-white tracking-wider">
+    <div className="container w-[40rem] h-[18rem] flex flex-col justify-center items-center m-auto text-white tracking-wider">
       <div className="location_name">
         <p>Trabzon</p>
       </div>
