@@ -1,7 +1,3 @@
-### Author
-
-Neşathan Öztürk
-
 <h1>About</h1>
 <p>This repository is my React Weather App project.<p>
 
