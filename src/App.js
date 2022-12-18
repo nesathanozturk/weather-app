@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import axios from "axios";
 import Header from "./components/Header";
 import Weather from "./components/Weather";
@@ -13,6 +13,7 @@ function App() {
   const getData = async () => {
     await axios.get(API_URL).then((res) => {
       setWeatherData(res.data);
+      console.log(res.data);
     });
     setCities("");
   };
