@@ -1,18 +1,16 @@
-function Weather() {
+function Weather({ weatherData }) {
   return (
     <div className="container w-[40rem] h-[18rem] flex flex-col justify-center items-center m-auto text-white tracking-wider">
       <div className="location_name">
-        <p>Trabzon</p>
-      </div>
-      <div className="coordinations flex justify-center items-center m-2">
-        <p className="mr-4 text-xl">39.8333</p>
-        <p className="text-xl">40.9167</p>
+        <p>{weatherData.name}</p>
       </div>
       <div className="temp mb-2">
-        <p className="text-8xl">12&deg;C</p>
+        {weatherData.main ? (
+          <p className="text-8xl">{weatherData.main.temp}&deg;C</p>
+        ) : null}
       </div>
       <div className="weather">
-        <p>Sun</p>
+        {weatherData.weather ? <p>{weatherData.weather[0].main}</p> : null}
       </div>
     </div>
   );

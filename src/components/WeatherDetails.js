@@ -1,25 +1,35 @@
-function WeatherDetails() {
+function WeatherDetails({ weatherData }) {
   return (
-    <div className="details text-center text-white w-[40rem] h-[6rem] p-4 flex justify-between items-center m-auto border-2 border-blue-400">
+    <div className="details w-[40rem] h-[6rem] p-4 flex justify-between items-center m-auto text-center text-white border-2 border-blue-400">
       <div className="feels_like">
         <p className="details_header">Feels Like</p>
-        <p className="details_result">9.62</p>
+        {weatherData.main ? (
+          <p className="details_result">{weatherData.main.feels_like}&deg;C</p>
+        ) : null}
       </div>
       <div className="humidity">
         <p className="details_header">Humidity</p>
-        <p className="details_result">54</p>
+        {weatherData.main ? (
+          <p className="details_result">{weatherData.main.humidity}%</p>
+        ) : null}
       </div>
       <div className="pressure">
         <p className="details_header">Pressure</p>
-        <p className="details_result">1025</p>
+        {weatherData.main ? (
+          <p className="details_result">{weatherData.main.pressure} hPa</p>
+        ) : null}
       </div>
       <div className="temp_min">
         <p className="details_header">Temp Min</p>
-        <p className="details_result">11.05</p>
+        {weatherData.main ? (
+          <p className="details_result">{weatherData.main.temp_min}&deg;C</p>
+        ) : null}
       </div>
       <div className="temp_max">
         <p className="details_header">Temp Max</p>
-        <p className="details_result">11.05</p>
+        {weatherData.main ? (
+          <p className="details_result">{weatherData.main.temp_max}&deg;C</p>
+        ) : null}
       </div>
     </div>
   );
