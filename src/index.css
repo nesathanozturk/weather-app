@@ -7,4 +7,9 @@
   body {
     background: url("./assets/sunset.jpg") no-repeat center/cover;
   }
+  .location_name,
+  weather {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
 }
