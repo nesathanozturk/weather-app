@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer components {
+  body {
+    background: url("./assets/sunset.jpg") no-repeat center/cover;
+  }
+}
