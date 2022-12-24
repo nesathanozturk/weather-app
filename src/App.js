@@ -8,12 +8,11 @@ function App() {
   const [cities, setCities] = useState("");
   const [weatherData, setWeatherData] = useState({});
 
-  const API_URL = `https://api.openweathermap.org/data/2.5/weather?q=${cities}&units=metric&appid=895284fb2d2c50a520ea537456963d9c`;
+  const BASE_URL = `https://api.openweathermap.org/data/2.5/weather?q=${cities}&units=metric&appid=895284fb2d2c50a520ea537456963d9c`;
 
   const getData = async () => {
-    await axios.get(API_URL).then((res) => {
+    await axios.get(BASE_URL).then((res) => {
       setWeatherData(res.data);
-      console.log(res.data);
     });
     setCities("");
   };
