@@ -7,19 +7,14 @@
   body {
     background: url("./assets/snow.jpg") no-repeat center center/cover;
   }
+  .details_header {
+    @apply border-b-2 border-white text-xl font-semibold max-sm:text-base;
+  }
   .location_name,
   .weather {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-  }
-  .details_header {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-    font-weight: 600;
+    @apply text-4xl max-sm:text-3xl;
   }
   .details_result {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-    font-weight: 600;
+    @apply text-lg font-semibold max-sm:text-base;
   }
 }
