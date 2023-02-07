@@ -2,7 +2,7 @@ function WeatherDetails({ weatherData }) {
   return (
     <div>
       {weatherData.name !== undefined && ( // If the name that we get from the data is empty, then it will not allow us to write this section however if it's correct, then it will allow us to write.
-        <div className="details bg-[#ffffff33] w-[55%] h-[55%] p-4 flex justify-between items-center m-auto text-center text-white rounded-xl max-sm:flex-wrap">
+        <div className="details bg-[#ffffff33] w-[55%] h-[55%] p-4 flex justify-between items-center gap-1 m-auto text-center text-white rounded-xl max-sm:flex-wrap">
           <div className="feels_like">
             <p className="details_header">Feels Like</p>
             {weatherData.main ? (
