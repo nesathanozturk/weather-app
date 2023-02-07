@@ -1,6 +1,6 @@
 function Weather({ weatherData }) {
   return (
-    <div className="container w-[50%] h-[18rem] flex flex-col justify-center items-center m-auto text-white tracking-wider">
+    <div className="container w-[30%] h-[18rem] flex flex-col justify-center items-center m-auto text-white tracking-wider">
       <div className="location_name max-sm:w-[60%]">
         <p>{weatherData.name}</p>
       </div>
