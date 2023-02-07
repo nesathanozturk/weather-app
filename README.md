@@ -1,10 +1,11 @@
 <h1>About</h1>
-<p>This repository is my React Weather App project.<p>
+<p>This repository is my Weather App project.<p>
 
-<h2>Technologies</h2>
- 
-<li>React</li>
-<li>Tailwind</li>
+## 🧰 Technologies Used
+
+- React JS
+- Axios
+- TailwindCSS for style
 
 ## Quick Start
 
