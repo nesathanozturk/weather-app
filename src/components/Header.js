@@ -1,6 +1,6 @@
 function Header({ cities, setCities, getData }) {
   return (
-    <header className="w-full flex flex-col justify-center items-center text-white font-poppins mb-5">
+    <header className="w-full flex flex-col justify-center items-center text-white font-poppins">
       <h1 className="text-5xl tracking-wider mt-4 my-2 max-sm:text-4xl">
         Weather App
       </h1>
