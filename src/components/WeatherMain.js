@@ -1,10 +1,10 @@
 function Weather({ weatherData }) {
   return (
     <div className="container w-[30%] h-[18rem] flex flex-col justify-center items-center m-auto text-white tracking-wider">
-      <div className="location_name max-sm:w-[60%]">
-        <p>{weatherData.name}</p>
+      <div className="location_name text-center">
+        <span>{weatherData.name}</span>
       </div>
-      <div className="temp mb-2">
+      <div className="temp my-2">
         {weatherData.main ? (
           <p className="text-8xl max-sm:text-7xl">
             {weatherData.main.temp}&deg;C
