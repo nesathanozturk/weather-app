@@ -5,7 +5,7 @@
 
 - React JS
 - Axios
-- TailwindCSS for style
+- TailwindCSS for styles
 
 ## Quick Start
 
