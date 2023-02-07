@@ -5,15 +5,23 @@
 @tailwind utilities;
 @layer components {
   body {
-    background: url("./assets/snow.jpg") no-repeat center center/cover;
+    background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1012%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='%231e3266'%3e%3c/rect%3e%3cpath d='M1512 560L0 560 L0 284.56Q121.47 334.03%2c 72 455.51Q64.13 327.63%2c 192 319.76Q244.67 252.43%2c 312 305.1Q370.63 291.73%2c 384 350.36Q477.83 324.19%2c 504 418.02Q582.51 376.53%2c 624 455.04Q627.56 338.61%2c 744 342.17Q753.75 279.92%2c 816 289.67Q899.66 301.33%2c 888 384.99Q958.56 335.56%2c 1008 406.12Q1028.42 306.54%2c 1128 326.96Q1142.58 269.53%2c 1200 284.11Q1274.76 238.87%2c 1320 313.63Q1413.98 287.62%2c 1440 381.6Q1458.67 328.27%2c 1512 346.95z' fill='rgba(53%2c 108%2c 177%2c 1)'%3e%3c/path%3e%3cpath d='M1488 560L0 560 L0 603.16Q-16.17 466.99%2c 120 450.82Q145.31 404.13%2c 192 429.44Q249.54 414.98%2c 264 472.52Q384.36 472.88%2c 384 593.24Q338.72 475.96%2c 456 430.68Q582.41 485.1%2c 528 611.51Q503.07 466.58%2c 648 441.64Q676.23 397.87%2c 720 426.09Q816.26 402.35%2c 840 498.61Q893.52 432.13%2c 960 485.66Q966.5 420.16%2c 1032 426.66Q1114.13 436.79%2c 1104 518.92Q1159.01 501.93%2c 1176 556.94Q1205.71 514.65%2c 1248 544.36Q1337.07 513.43%2c 1368 602.51Q1415.24 529.75%2c 1488 576.99z' fill='rgba(53%2c 108%2c 177%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1012'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e")
+      center center/cover no-repeat;
   }
+
+  .details {
+    box-shadow: 0px 0px 10px silver;
+  }
+
   .details_header {
     @apply border-b-2 border-white text-xl font-semibold max-sm:text-base;
   }
+
   .location_name,
   .weather {
     @apply text-4xl max-sm:text-3xl;
   }
+
   .details_result {
     @apply text-lg font-semibold max-sm:text-base;
   }
