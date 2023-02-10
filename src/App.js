@@ -10,12 +10,12 @@ function App() {
   const [weatherData, setWeatherData] = useState({});
   const [isLoading, setIsLoading] = useState(false);
 
-  const BASE_URL = `https://api.openweathermap.org/data/2.5/weather?q=${cities}&units=metric&appid=895284fb2d2c50a520ea537456963d9c`;
+  const API_URL = `https://api.openweathermap.org/data/2.5/weather?q=${cities}&units=metric&appid=895284fb2d2c50a520ea537456963d9c`;
 
   const getData = async () => {
     try {
       setIsLoading(true);
-      await axios.get(BASE_URL).then((res) => {
+      await axios.get(API_URL).then((res) => {
         setWeatherData(res.data);
         setCities("");
       });
